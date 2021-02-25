@@ -150,7 +150,7 @@ class Home extends BaseController
 		$service = new Services();
 		$data['banner_caption'] = "Our Service";
 		$data['banner_img'] = "shop-banner.jpg";
-		$data['title'] = "Create :: Chaplin Rowan";
+		$data['title'] = "Service :: Chaplin Rowan";
 		$data['service']=$service->getServices($slug);
 		$data['services'] = $service->getServices();
 		$data['serviceHeaders']=$service->getServiceHeaders();

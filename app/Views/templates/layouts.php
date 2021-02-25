@@ -18,7 +18,8 @@
    <body>
 
    <?= $this->renderSection('content') ?>
-
+    <!-- Preloader -->
+    <div class="preloader"></div>
    <?= $this->include('templates/footer') ?>
 
    <script src="<?= base_url('js/jquery.min.js'); ?>"></script> 
@@ -27,6 +28,7 @@
    <script src="<?= base_url('js/responsive_bootstrap_carousel.js'); ?>"></script> 
    <script src="<?= base_url('js/custom.js'); ?>"></script>
    <script src="<?= base_url('js/slick.js'); ?>"></script>
+   <script src="<?= base_url('js/loader.js'); ?>"></script>
 
    <script>
  

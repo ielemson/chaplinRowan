@@ -11,11 +11,13 @@
 			 <!--=========Servie Right Start============-->
                <div class="col-md-8 right-column">
                   <div class="service-right-desc">
-                     <span class="image_hover ">
+                     <span class="image_hover">
                      <img src="/images/<?=$service['img'];?>" class="img-responsive zoom_img_effect" alt="material-image">
                      </span>
+                     <div class="service-detail">
                      <h3><?=$service['header'];?></h3>
-                     <p><?=$service['description'];?></p>
+                     <?=$service['description'];?>
+                  </div>
                   </div>
                   <!-- <div class="specialization-cl">
                      <div class="special-text project-mission">

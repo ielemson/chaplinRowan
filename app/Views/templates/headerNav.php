@@ -52,9 +52,9 @@
                         <li class="dropdown ">
                            <a href="#">Policies</a><i class="fa fa-chevron-down"></i>
                            <ul class="dropdown-submenu">
-                              <li><a href="hse">HSE</a></li>
-                              <li><a href="quality-assurance">Quality Assurance</a></li>
-                              <li><a href="corporate-policy">Corporate Policy Statement</a></li>
+                              <li><a href="/hse">HSE</a></li>
+                              <li><a href="/quality-assurance">Quality Assurance</a></li>
+                              <li><a href="/corporate-policy">Corporate Policy Statement</a></li>
                              
                            </ul>
                         </li>
