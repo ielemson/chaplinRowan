@@ -47,22 +47,21 @@ class Email extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $SMTPHost = 'mail.chaplinrowanltd.com';
+	public $SMTPHost;
 
 	/**
 	 * SMTP Username
 	 *
 	 * @var string
 	 */
-	public $SMTPUser = 'info@chaplinrowanltd.com';
+	public $SMTPUser;
 
 	/**
 	 * SMTP Password
 	 *
 	 * @var string
 	 */
-	public $SMTPPass = 'V3@1!xdEH4!o';
-
+	public $SMTPPass;
 	/**
 	 * SMTP Port
 	 *
