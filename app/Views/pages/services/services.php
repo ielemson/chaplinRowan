@@ -10,7 +10,7 @@
             <div class="row ">
                <div class="head-section service-head other-heading">
                   <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
-                     <h3>OUR services</h3>
+                     <h3>Our Services</h3>
                   </div>
                   <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12">
                      <p class="fnt-18">With years of experience and real focus on customer satisfaction/delivery, you can trust on us for your next project. We provide a professional service for private and commercial customers.</p>

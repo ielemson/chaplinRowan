@@ -1,4 +1,6 @@
+
 <header class="header2">
+
          <div class="container">
             <div class="row">
                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 display-block ">
@@ -6,7 +8,7 @@
                </div>
                <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12 pull-right">
                   <ul class="header-info">
-                     <li class="address">G81 Road 2, VGC, <br/> Lekki Lagos Nigeria</li>
+                  <li class="address">Plot G81 Road 2, VGC,<br/>Lekki Epe Exp. Way,Lagos</li>
                      <li class="phn">09132099979,<br/><a href="mailto:info@chaplinrowanltd.com">info@chaplinrowanltd.com</a></li>
                   </ul>
                   <div class="header-socials display-block"> 
@@ -28,11 +30,11 @@
                   <div id="main-navigation" class="collapse navbar-collapse ">
                      <ul class="nav navbar-nav">
                         <li>
-                           <a href="/" class="active">Home</a>
+                           <a href="/" class='<?= $status ?? '' ?>'>Home</a>
                           
                         </li>
                         <li class="dropdown">
-                           <a href="#">About Us</a><i class="fa fa-chevron-down"></i>
+                           <a href="#" >About Us</a><i class="fa fa-chevron-down"></i>
                            <ul class="dropdown-submenu">
                               <li><a href="/about">Who We Are</a></li>
                               <li><a href="/our-mission">Our Mission</a></li>
@@ -64,9 +66,14 @@
                       <div class="search-column search-fl">
                         <button name="button" type="button" class="search-btn"  data-toggle="modal" data-target=".bs-example-modal-lg"></button>
                      </div>
-                     <a class="header-requestbtn header2-requestbtn hvr-bounce-to-right" href="request-quote.html">Request A Quote</a>
+                     <a class="header-requestbtn header2-requestbtn hvr-bounce-to-right" href="/contact">Request A Quote</a>
                   </div> 
                </div>
             </div>
          </nav>
       </header> 
+
+      <?php 
+$uri = current_url(true);
+// echo (string)$uri;  // http://example.com
+?>

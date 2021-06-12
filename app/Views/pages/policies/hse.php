@@ -36,7 +36,7 @@
                         <h4>CONTACT US </h4>
                         <ul class="office-information">
                            <li class="office-loc">
-                              <span class="info-txt">G81 Road 2, VGC,Lekki Lagos Nigeria.</span>
+                              < <span class="info-txt">Plot G81 Road 2, VGC, Lekki Epe Exp. Way, Lagos.</>
                            </li>
                            <li class="office-phn">
                               <span class="info-txt fnt_17">09132099979</span>

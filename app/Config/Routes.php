@@ -37,14 +37,15 @@ $routes->get('chap', 'Home::indexCopy');
 $routes->get('hse', 'Home::hse');
 $routes->get('quality-assurance', 'Home::qassure');
 $routes->get('corporate-policy', 'Home::coportatePolicy');
-// $routes->get('create', 'Home::create');
 $routes->match(['get', 'post'], 'create', 'Home::create');
 $routes->get('services','Home::services');
 $routes->get('service/(:any)','Home::service/$1');
 $routes->get('about', 'Home::about');
-$routes->get('contact', 'Home::contact');
+$routes->get('contact', 'ContactController::index');
+$routes->post('contact', 'ContactController::sendContact');
 $routes->get('our-mission', 'Home::ourMission');
 $routes->get('our-vision', 'Home::ourVision');
+$routes->get('email', 'EmailController::index');
 
 /*
  * --------------------------------------------------------------------

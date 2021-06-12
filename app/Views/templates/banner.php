@@ -8,7 +8,7 @@
                </div>
                <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12 pull-right">
                <ul class="header-info">
-                     <li class="address">G81 Road 2, VGC, <br/> Lekki Lagos Nigeria</li>
+                     <li class="address">Plot G81 Road 2, VGC,<br/>Lekki Epe Exp. Way,Lagos</li>
                      <li class="phn">09132099979,<br/><a href="mailto:info@chaplinrowanltd.com">info@chaplinrowanltd.com</a></li>
                   </ul>
                   <div class="mob-social display-none">
@@ -23,7 +23,7 @@
                      </div>
                   </div>
                   <span class="display-block">
-                  <a class="header-requestbtn hvr-bounce-to-right " href="request-quote.html">Request A Quote</a>
+                  <a class="header-requestbtn hvr-bounce-to-right " href="/contact">Request A Quote</a>
                   </span>
                </div>
             </div>
@@ -37,7 +37,8 @@
                <div id="main-navigation" class="collapse navbar-collapse ">
                <ul class="nav navbar-nav">
                         <li class="dropdown ">
-                           <a href="/" class="active">Home</a><i class="fa fa-chevron-down"></i>
+                           <!-- <a href="/" class="active">Home</a><i class="fa fa-chevron-down"></i> -->
+                           <a href="/">Home</a><i class="fa fa-chevron-down"></i>
                           
                         </li>
                         <!-- <li class="dropdown">
@@ -46,7 +47,7 @@
                         </li> -->
 
                         <li class="dropdown">
-                           <a href="#">About Us</a><i class="fa fa-chevron-down"></i>
+                           <a href="#" class='<?= $active_about ?? '' ?>'>About Us</a><i class="fa fa-chevron-down"></i>
                            <ul class="dropdown-submenu">
                               <li><a href="/about">Who We Are</a></li>
                               <li><a href="/our-mission">Our Mission</a></li>
@@ -55,7 +56,7 @@
                         </li>
                         
                         <li class="dropdown ">
-                           <a href="#">Our Services</a><i class="fa fa-chevron-down"></i>
+                           <a href="#" class='<?= $active_service ?? '' ?>'>Our Services</a><i class="fa fa-chevron-down"></i>
                            <ul class="dropdown-submenu">
                            <?php if($serviceHeaders) : ?>
                            <?php   foreach($serviceHeaders as $header): ?>
@@ -65,7 +66,7 @@
                            </ul>
                         </li>
                         <li class="dropdown ">
-                           <a href="index.html">Policies</a><i class="fa fa-chevron-down"></i>
+                           <a href="#"  class='<?= $active_policy ?? '' ?>'>Policies</a><i class="fa fa-chevron-down"></i>
                            <ul class="dropdown-submenu">
                               <li><a href="/hse">HSE</a></li>
                               <li><a href="/quality-assurance">Quality Assurance</a></li>
@@ -74,7 +75,7 @@
                            </ul>
                         </li>
                         <li><a href="https://ds1-eude-ss.host.gl:2096/" target="_blank">Staff Login</a></li>
-                        <li><a href="/contact">contact us</a></li>
+                        <li><a href="/contact" class='<?= $active_contact ?? '' ?>'>contact us</a></li>
                      </ul>
                   <div class="header-nav-right">
                      <div class="header-socials"> 

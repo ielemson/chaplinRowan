@@ -9,7 +9,7 @@
             <div class="container">
                <ul class="footer-info">
                   <!-- <li class="ftr-loc">121  Maxwell Farm Road,<br/> Washington DC, USA</li> -->
-                  <li class="ftr-loc">G81 Road 2, VGC, <br/> Lekki Lagos Nigeria</li>
+                  <li class="ftr-loc">Plot G81 Road 2, VGC, <br/> Lekki Epe Exp. Way, Lagos</li>
                   <li class="ftr-phn">09132099979</li>
                   <li class="ftr-msg">info@chaplinrowanltd.com</li>
                   <li class="ftr-support">9am To 5pm Mon-Fri</li>

@@ -18,6 +18,7 @@ class Home extends BaseController
 		// $services = $builder->limit(10);
 		$data['services'] = $services->getServices();
 		$data['serviceHeaders'] = $services->getServiceHeaders();
+		$data['status'] = "active";
 		return view('pages/welcome',$data);
 	
 	}
@@ -38,6 +39,7 @@ class Home extends BaseController
 		$data['banner_caption'] = "Health, Safety & Environment (HSE)";
 		$data['banner_img'] = "hse-policy.png";
 		$data['title'] = "HSE :: Chaplin Rowan";
+		$data['active_policy'] = "active";
 		$services  = new Services();
 		$data['services'] = $services->getServices();
 		$data['serviceHeaders'] = $services->getServiceHeaders();
@@ -52,6 +54,7 @@ class Home extends BaseController
 		$data['banner_caption'] = "Quality Assurance";
 		$data['banner_img'] = "quality-assurance.png";
 		$data['title'] = "Quality Assurance :: Chaplin Rowan";
+		$data['active_policy'] = "active";
 		$services  = new Services();
 		$data['services'] = $services->getServices();
 		$data['serviceHeaders'] = $services->getServiceHeaders();
@@ -64,42 +67,13 @@ class Home extends BaseController
 		$data['banner_caption'] = "Coporate Policy";
 		$data['banner_img'] = "corporate.png";
 		$data['title'] = "Coporate Policy :: Chaplin Rowan";
+		$data['active_policy'] = "active";
 		$services  = new Services();
 		$data['services'] = $services->getServices();
 		$data['serviceHeaders'] = $services->getServiceHeaders();
 		return view('pages/policies/coporate-policy',$data);
 	
 	}
-
-
-	// public function create(){
-
-	// 	helper('form');
-
-	// 	$service = new Services();
-
-	// 	if(! $this->validate([
-	// 		'header'=>'required|min_length[10]|max_length[255]',
-	// 		'image'=>'required',
-	// 		'description'=>'required|min_length[50]|max_length[255]',
-	// 	])){
-	// 		$urlVar['banner_caption'] = "Create Service";
-	// 		$urlVar['banner_img'] = "shop-banner.jpg";
-	// 		$urlVar['title'] = "Create :: Chaplin Rowan";
-	
-	// 		return view('pages/create',$urlVar);
-	// 	}else{
-	// 		$service->save([
-	// 			'header'=>$this->request->getVar('header'),
-	// 			'image'=>$this->request->getVar('image'),
-	// 			'description'=>$this->request->getVar('description'),
-	// 			'slug'=>url_title($this->request->getVar('header'))
-	// 		]);
-
-	// 		return redirect()->to('/');
-	// 	}
-
-	// }
 
 
 	public function create()
@@ -148,9 +122,10 @@ class Home extends BaseController
 
 	public function service($slug){
 		$service = new Services();
-		$data['banner_caption'] = "Our Service";
+		$data['banner_caption'] = "Our Services";
 		$data['banner_img'] = "shop-banner.jpg";
 		$data['title'] = "Service :: Chaplin Rowan";
+		$data['active_service'] = "active";
 		$data['service']=$service->getServices($slug);
 		$data['services'] = $service->getServices();
 		$data['serviceHeaders']=$service->getServiceHeaders();
@@ -162,6 +137,7 @@ class Home extends BaseController
 		$service = new Services();
 		$data['banner_caption'] = "Our Services";
 		$data['banner_img'] = "about-banner.jpg";
+		$data['status'] = "active";
 		$data['services'] = $service->getServices();
 		$data['serviceHeaders'] = $service->getServiceHeaders();
 		return view('pages/services/services',$data);
@@ -171,6 +147,7 @@ class Home extends BaseController
 		// echo view('templates/header');
 		$data['banner_caption'] = "About Us";
 		$data['banner_img'] = "about-banner.jpg";
+		$data['active_about'] = "active";
 		$services  = new Services();
 		$data['services'] = $services->getServices();
 		$data['serviceHeaders'] = $services->getServiceHeaders();
@@ -181,6 +158,7 @@ class Home extends BaseController
 		$data['banner_caption'] = "Contact Us";
 		$data['banner_img'] = "contact-banner.jpg";
 		$data['title'] = "Contact :: Chaplin Rowan";
+		$data['active_contact'] = "active";
 		$services  = new Services();
 		$data['services'] = $services->getServices();
 		$data['serviceHeaders'] = $services->getServiceHeaders();
@@ -188,11 +166,14 @@ class Home extends BaseController
 	
 		
 	}
+
+
 	public function ourMission(){
 		// echo view('templates/header');
 		$data['banner_caption'] = "Our Mission";
 		$data['banner_img'] = "contact-banner.jpg";
 		$data['title'] = "Our Mision :: Chaplin Rowan";
+		$data['active_about'] = "active";
 		$services  = new Services();
 		$data['services'] = $services->getServices();
 		$data['serviceHeaders'] = $services->getServiceHeaders();
@@ -205,6 +186,7 @@ class Home extends BaseController
 		$data['banner_caption'] = "Our Vision";
 		$data['banner_img'] = "contact-banner.jpg";
 		$data['title'] = "Our Vision :: Chaplin Rowan";
+		$data['active_about'] = "active";
 		$services  = new Services();
 		$data['services'] = $services->getServices();
 		$data['serviceHeaders'] = $services->getServiceHeaders();

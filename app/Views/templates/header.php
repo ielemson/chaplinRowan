@@ -3,7 +3,7 @@
          <div class="hdr-top-bar">
             <div class="container">
                <ul class="header-info">
-                  <li class="address">G81 Road 2, VGC,Lekki Lagos Nigeria</li>
+               <li class="address">Plot G81 Road 2, VGC,<br/>Lekki Epe Exp. Way,Lagos</li>
                   <li class="phn">09132099979,
                   info@chaplinrowanltd.com
                   </li>
@@ -36,10 +36,10 @@
                   <a href="index" class="logo"><img src="images/logo.png" class="img-responsive display-block" alt="logo"></a>
                   <ul class="nav navbar-nav">
                      <li class="dropdown ">
-                        <a href="/" class="active">Home</a>
+                        <a href="/" >Home</a>
                      </li>
                      <li class="dropdown">
-                           <a href="#">About Us</a><i class="fa fa-chevron-down"></i>
+                           <a href="#" class='<?= $status ?? '' ?>'>About Us</a><i class="fa fa-chevron-down"></i>
                            <ul class="dropdown-submenu">
                               <li><a href="/about">Who We Are</a></li>
                               <li><a href="/our-mission">Our Mission</a></li>
@@ -57,7 +57,7 @@
                            </ul>
                         </li>
                         <li class="dropdown ">
-                           <a href="index.html">Policies</a><i class="fa fa-chevron-down"></i>
+                           <a href="#">Policies</a><i class="fa fa-chevron-down"></i>
                            <ul class="dropdown-submenu">
                               <li><a href="/hse">HSE</a></li>
                               <li><a href="/quality-assurance">Quality Assurance</a></li>
@@ -71,7 +71,7 @@
                   </ul>
                   <div class="header-nav-right">
                      <span class="display-none">
-                     <a class="header-requestbtn hvr-bounce-to-right" href="request-quote.html">Request A Quote</a></span>
+                     <a class="header-requestbtn hvr-bounce-to-right" href="/contact">Request A Quote</a></span>
                   </div>
                </div>
             </div>
